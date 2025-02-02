@@ -1,6 +1,6 @@
 File 1
 
-versione 3.0
+versione 4.0
 
 git --version
 
@@ -59,12 +59,24 @@ git diff   (mi mostra tutti i file modificati a cui non ho fatto git add)
 git diff License.txt   (differenze singolo file)
 git restore License.txt  (elimina le modifiche, ritorna al file precedente)
 
-
+PER AGGANCIARE UN REMOTE
 git remote
 git remote add origin https://github.com/GiovannaSuardi/StudioGit.git
 git remote --verbose  (vedo i riferimenti URL)
 git remote show origin (dettagli repository remota)
 
+
+git fetch --all
+git log --oneline --all
+git pull origin main (sincronizza il remoto con origine)
+
+
+
+git remote add backup https://github.com/GiovannaSuardi/StudioGit-backup.git
+git remote rename backup bck (rinomina)
+git remote --verbose
+git remote rm bck (elimina)
+git remote -v
 
 
  
