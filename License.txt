@@ -1,4 +1,4 @@
-Copyright (c) 2025 Giovanna
+Copyright (c) 2025 Giovanna Suardi
 
 MIT License
 
