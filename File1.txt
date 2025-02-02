@@ -68,7 +68,7 @@ git remote show origin (dettagli repository remota)
 
 git fetch --all
 git log --oneline --all
-git pull origin main (sincronizza il remoto con origine)
+git pull origin main (sincronizza il remoto con il locale)
 
 
 
@@ -80,7 +80,7 @@ git remote -v
 
 
  
-$ git push origin main
+$ git push origin main   (sincronizza il locale con il remoto)
 Enumerating objects: 16, done.
 Counting objects: 100% (16/16), done.
 Delta compression using up to 16 threads
