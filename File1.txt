@@ -1,6 +1,6 @@
 File 1
 
-versione 1.0
+versione 2.0
 
 git --version
 
@@ -22,6 +22,45 @@ nella cartella clickDX e seleziono git Bush
 git init
 
 ll   mostra la lista dei file
+
+
+
+git clone https://github.com/GiovannaSuardi/StudioGit StudioGit
+cd StudioGit
+git status
+git add File1.txt
+git status
+git commit --message "Version 1.0"
+
+$ git commit --message "Version 1.0"
+[main e5b55f5] Version 1.0
+ 1 file changed, 185 insertions(+)
+ create mode 100644 File1.txt
+
+git commit -m "added license"
+[main 9862fc5] added license
+ 1 file changed, 22 insertions(+)
+ create mode 100644 License.txt
+
+
+git commit -ma    (aggiorna i file sull'ultimo commit)
+
+
+git log
+git log --stat   (vedo i file )
+git log --help
+
+git log --oneline
+
+git add .
+git restore --staged License.txt
+
+git diff   (mi mostra tutti i file modificati a cui non ho fatto git add)
+git diff License.txt   (differenze singolo file)
+git restore License.txt  (elimina le modifiche, ritorna al file precedente)
+
+
+ 
 
 
 CLONARE
