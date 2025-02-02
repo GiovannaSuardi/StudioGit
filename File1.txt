@@ -1,6 +1,6 @@
 File 1
 
-versione 2.0
+versione 3.0
 
 git --version
 
@@ -60,6 +60,28 @@ git diff License.txt   (differenze singolo file)
 git restore License.txt  (elimina le modifiche, ritorna al file precedente)
 
 
+git remote
+git remote add origin https://github.com/GiovannaSuardi/StudioGit.git
+git remote --verbose  (vedo i riferimenti URL)
+git remote show origin (dettagli repository remota)
+
+
+
+ 
+$ git push origin main
+Enumerating objects: 16, done.
+Counting objects: 100% (16/16), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (15/15), done.
+Writing objects: 100% (15/15), 3.49 KiB | 3.49 MiB/s, done.
+Total 15 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), done.
+To https://github.com/GiovannaSuardi/StudioGit
+   6fe66d7..09da089  main -> main
+
+
+
+******
  
 
 
