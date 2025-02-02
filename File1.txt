@@ -1,0 +1,185 @@
+File 1
+
+versione 1.0
+
+git --version
+
+git config --global user.name "GiovannaSuardi"
+git config --global user.email giovanna.suardi11@gmail.com
+git config --global core.edit nano
+
+git config list
+
+git status
+git add File1.txt
+
+
+git help
+git config --help
+
+
+nella cartella clickDX e seleziono git Bush
+git init
+
+ll   mostra la lista dei file
+
+
+CLONARE
+
+cd$ git clone https://github.com/GiovannaSuardi/StudioGit StudioGit
+Cloning into 'StudioGit'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+
+
+giova@Giovanna-HPENVY MINGW64 /c/Lavoro
+$ cd Studiogit
+
+giova@Giovanna-HPENVY MINGW64 /c/Lavoro/Studiogit (main)
+$ ll
+total 1
+-rw-r--r-- 1 giova 197609 29 Feb  2 11:27 README.md
+
+giova@Giovanna-HPENVY MINGW64 /c/Lavoro/Studiogit (main)
+$ ll -a
+total 9
+drwxr-xr-x 1 giova 197609  0 Feb  2 11:27 ./
+drwxr-xr-x 1 giova 197609  0 Feb  2 11:27 ../
+drwxr-xr-x 1 giova 197609  0 Feb  2 11:27 .git/
+-rw-r--r-- 1 giova 197609 29 Feb  2 11:27 README.md
+
+giova@Giovanna-HPENVY MINGW64 /c/Lavoro/Studiogit (main)
+
+
+
+
+
+COME FARE UN COMMIT
+
+giova@Giovanna-HPENVY MINGW64 /c/Lavoro/Studiogit (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        File1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+
+giova@Giovanna-HPENVY MINGW64 /c/Lavoro/Studiogit (main)
+$ git add File1.txt
+
+giova@Giovanna-HPENVY MINGW64 /c/Lavoro/Studiogit (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   File1.txt
+
+
+MODIFICO IL FILE
+
+giova@Giovanna-HPENVY MINGW64 /c/Lavoro/Studiogit (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   File1.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   File1.txt
+
+
+
+git commit
+
+SI APRE LA VIDEATA
+
+
+Initial commit     <<<<<------ il primo commit solitamente si imposta con questa label
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+# Your branch is up to date with 'origin/main'.
+#
+# Changes to be committed:
+#       new file:   File1.txt
+#
+~
+~
+~
+~
+~
+~
+~
+
+git config sequence.editor
+git var GIT_EDITOR
+
+git config sequence.editor
+git var GIT_EDITOR
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+giova@Giovanna-HPENVY MINGW64 /c/Lavoro/StudioGit (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   File1.txt
+        new file:   File2.txt
+
+
+giova@Giovanna-HPENVY MINGW64 /c/Lavoro/StudioGit (main)
+$ git commit --message "Prova di commit"
+[main 52b120b] Prova di commit
+ 2 files changed, 258 insertions(+)
+ create mode 100644 File1.txt
+ create mode 100644 File2.txt
+
+giova@Giovanna-HPENVY MINGW64 /c/Lavoro/StudioGit (main)
+$ git log
+commit 52b120b363d1bdd98f9b7a35bbc5d8cac918070e (HEAD -> main)
+Author: GiovannaSuardi <giovanna.suardi11@gmail.com>
+Date:   Sun Feb 2 14:10:37 2025 +0100
+
+    Prova di commit
+
+commit 6fe66d74bf50c904a1f2055f1cfe6523bc6b0887 (origin/main, origin/HEAD)
+Author: GiovannaSuardi <123564240+GiovannaSuardi@users.noreply.github.com>
+Date:   Sun Feb 2 10:32:36 2025 +0100
+
+    Initial commit
+
+giova@Giovanna-HPENVY MINGW64 /c/Lavoro/StudioGit (main)
+$ nano read.me
+
+
